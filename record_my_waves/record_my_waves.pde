@@ -8,7 +8,7 @@ String com_port = "/dev/tty.MindWave";
 PrintWriter log; 
 SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd HH:mm:SS");
 void setup() {
-	try { log = new PrintWriter(new FileWriter("/Users/csmpls/my-great-neurolog.txt", true));  
+	try { log = new PrintWriter(new FileWriter("test.txt", true));  
 	} catch (IOException e) { println("nope");}
 	neurosky.initialize(this,com_port, log);
 }
